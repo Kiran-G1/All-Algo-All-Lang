@@ -14,7 +14,7 @@ for(int i = 0; i<size; i++)
 insertionSort(int *a)
 {
  printf("\napplying insertion sort\n");
-
+int iteration=1;
 for(int i=1;i<11;i++)
   {
   int key = a[i];
@@ -25,8 +25,9 @@ for(int i=1;i<11;i++)
       i = i-1;
       }
    a[i]=key;
-  printf("after %d iteration\n",i);
+  printf("after %d iteration\n",iteration);
   printMyArray(a,11);
+  iteration = iteration + 1;
   }
 }
 
